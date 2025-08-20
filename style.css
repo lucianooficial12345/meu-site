@@ -1,17 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #0077cc;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 header nav a {
@@ -26,46 +31,66 @@ header nav a:hover {
 }
 
 section {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 #hero {
-    background-color: #00aaff;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
     color: #fff;
 }
 
-button {
+#hero button {
     background-color: #ff9900;
     border: none;
-    padding: 15px 25px;
-    font-size: 18px;
+    padding: 15px 30px;
+    font-size: 20px;
     cursor: pointer;
     margin-top: 20px;
     border-radius: 5px;
+    transition: background 0.3s;
 }
 
-button:hover {
+#hero button:hover {
     background-color: #e68a00;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+section img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
-ul li {
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
     background-color: #fff;
-    margin: 10px auto;
-    padding: 15px;
-    max-width: 400px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+.depoimentos {
+    max-width: 600px;
+    margin: 20px auto;
+    font-style: italic;
+}
+
+button {
+    cursor: pointer;
 }
 
 footer {
-    background-color: #333;
+    background-color: #0077cc;
     color: #fff;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
 }
