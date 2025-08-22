@@ -3,32 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato – Nexa Dev</title>
-  <link rel="stylesheet" href="../style/style.css">
-  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <title>Contato | NEXA DEV</title>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-  <div class="background-overlay"></div>
-
+  <!-- Cabeçalho -->
   <header>
-    <div class="logo">Nexa Dev</div>
+    <a href="/"><img src="/img/favicon.png" alt="Logo NEXA DEV"></a>
     <nav>
-      <a href="../">Home</a>
-      <a href="../sobre">Sobre</a>
-      <a href="../planos">Planos</a>
-      <a href="../depoimentos">Depoimentos</a>
-      <a href="../contato" class="active">Contato</a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/sobre/">Sobre</a></li>
+        <li><a href="/planos/">Planos</a></li>
+        <li><a href="/depoimentos/">Depoimentos</a></li>
+        <li><a href="/contato/">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="page">
-    <h1>Entre em Contato</h1>
-    <p>Quer transformar o atendimento da sua empresa com nossos chatbots? Fale agora conosco:</p>
-    <a class="btn-whatsapp" href="https://wa.me/5598985603546" target="_blank">Falar no WhatsApp</a>
+  <!-- Conteúdo -->
+  <section class="container">
+    <h1>Fale Conosco</h1>
+    <p style="text-align:center; margin-bottom:20px;">
+      Preencha o formulário abaixo e entraremos em contato o mais rápido possível.
+    </p>
+
+    <form action="https://formsubmit.co/seuemail@dominio.com" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
+  <!-- Rodapé -->
   <footer>
-    <p>© 2025 Nexa Dev – Todos os direitos reservados</p>
+    <p>&copy; 2025 NEXA DEV - Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>

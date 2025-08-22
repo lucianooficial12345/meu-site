@@ -1,42 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Depoimentos – Nexa Dev</title>
-  <link rel="stylesheet" href="../style/style.css">
-  <link rel="icon" type="image/png" href="../img/favicon.png">
-</head>
-<body>
-  <div class="background-overlay"></div>
-
-  <header>
-    <div class="logo">Nexa Dev</div>
-    <nav>
-      <a href="../">Home</a>
-      <a href="../sobre">Sobre</a>
-      <a href="../planos">Planos</a>
-      <a href="../depoimentos" class="active">Depoimentos</a>
-      <a href="../contato">Contato</a>
-    </nav>
-  </header>
-
-  <section class="page">
-    <h1>O que dizem nossos clientes</h1>
-    <div class="testimonials">
-      <div class="testimonial">
-        <p>“O chatbot da Nexa Dev revolucionou meu atendimento. Agora atendo clientes 24h e fecho muito mais vendas!”</p>
-        <span>— João Silva, Loja Mix</span>
-      </div>
-      <div class="testimonial">
-        <p>“Super fácil de usar e totalmente personalizado. Recomendo para qualquer empresa que queira crescer!”</p>
-        <span>— Maria Santos, Agência Digital</span>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Nexa Dev – Todos os direitos reservados</p>
-  </footer>
+<div class="plan-card">
+<h2>Bot Essencial</h2>
+<p>Atendimento 24/7 no WhatsApp com menu e respostas inteligentes.</p>
+<ul class="plan-list">
+<li>Menu com imagem</li>
+<li>Captura de dados</li>
+<li>Relatórios básicos</li>
+</ul>
+<p class="price">A partir de R$ 699</p>
+<a class="btn-whatsapp" href="https://wa.me/5598981502071" target="_blank">Quero esse</a>
+</div>
+<div class="plan-card">
+<h2>Bot Pro</h2>
+<p>Fluxos avançados, integrações e automações para vender no piloto automático.</p>
+<ul class="plan-list">
+<li>Integração com planilhas/CRM</li>
+<li>Lembretes e cupons</li>
+<li>Relatórios avançados</li>
+</ul>
+<p class="price">A partir de R$ 1.299</p>
+<a class="btn-whatsapp" href="https://wa.me/5598981502071" target="_blank">Quero esse</a>
+</div>
+</div>
+</div>
+<!-- Aba: Combo -->
+<div class="tab-content" id="tab-combo">
+<div class="plans">
+<div class="plan-card highlight">
+<h2>Combo Crescimento</h2>
+<p>Site + Chatbot integrados para captar, atender e converter em um só lugar.</p>
+<ul class="plan-list">
+<li>Site Pro + Bot Pro</li>
+<li>Integrações e automações</li>
+<li>Suporte prioritário</li>
+</ul>
+<p class="price">Pacotes com desconto</p>
+<a class="btn-whatsapp" href="https://wa.me/5598981502071" target="_blank">Quero conversar</a>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<p>© 2025 Nexa Dev – Todos os direitos reservados</p>
+</footer>
+<script>
+// Tabs simples
+const buttons = document.querySelectorAll('.tab-btn');
+const contents = {
+sites: document.getElementById('tab-sites'),
+chatbots: document.getElementById('tab-chatbots'),
+combo: document.getElementById('tab-combo')
+};
+buttons.forEach(btn => {
+btn.addEventListener('click', () => {
+document.querySelector('.tab-btn.active')?.classList.remove('active');
+btn.classList.add('active');
+document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('show'));
+contents[btn.dataset.tab].classList.add('show');
+});
+});
+</script>
 </body>
 </html>
