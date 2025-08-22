@@ -130,4 +130,12 @@ html, body {
   max-width: calc(100% - 40px); /* evita estourar no desktop */
   white-space: nowrap; /* mantém texto em uma linha */
 }
+.whatsapp-btn {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 40;
+  max-width: calc(100% - 40px); /* não deixa ultrapassar a largura */
+  overflow-x: hidden;
+}
 
