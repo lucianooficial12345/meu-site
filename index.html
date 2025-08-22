@@ -45,6 +45,13 @@
       border-radius: 50px;
     }
 
+    /* Centralizar grid da seção Diferenciais */
+    .diferenciais .grid-3 {
+      max-width: 1100px;   /* limita largura total da grid */
+      margin: 0 auto;      /* centraliza */
+      justify-content: center;
+    }
+
     /* Responsividade (no celular fica normal em coluna) */
     @media (max-width: 768px) {
       .hero {
@@ -102,8 +109,8 @@
   </div>
 </section>
 
-<section class="container section reveal">
-  <h2 class="kicker">Diferenciais</h2>
+<section class="container section reveal diferenciais">
+  <h2 class="kicker center">Diferenciais</h2>
   <div class="grid grid-3 spaced">
     <div class="card">
       <h3>Sites rápidos</h3>
