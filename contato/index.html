@@ -3,168 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato | NEXA DEV</title>
-  <link rel="icon" type="image/png" href="/img/favicon.png">
-  <link rel="stylesheet" href="/style/style.css">
-<style>/* === Nexa Dev — Tema DARK + CIANO (inline) =============================== */
-:root{
-  --bg:#0b0f14;
-  --surface:rgba(255,255,255,.04);
-  --surface-2:rgba(255,255,255,.06);
-  --border:rgba(255,255,255,.08);
-  --text:#e6edf3;
-  --muted:#9aa7b2;
-  --primary:#00e5ff;
-  --primary-strong:#00c8e6;
-  --shadow:0 10px 30px rgba(0,0,0,.35);
-}
+  <title>Contato - Nexa Dev</title>
+  <style>
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+      line-height: 1.6;
+  }
+  header, footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.9);
+  }
+  h1, h2, h3 {
+      color: #00e0ff;
+  }
+  .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+  }
+  p {
+      color: #ddd;
+  }
+  .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #00e0ff;
+      color: #000;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+  }
+  .btn:hover {
+      background: #33ecff;
+  }
 
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font: 16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
-  color:var(--text);
-  background: var(--bg) url("/img/fundo.png") no-repeat top center fixed;
-  background-size: cover;
-  overflow-x:hidden;
-}
-.background-overlay{
-  position:fixed; inset:0;
-  background: rgba(0,0,0,.55);
-  backdrop-filter:saturate(140%) blur(2px);
-  pointer-events:none; z-index:0;
-}
-header, section, footer { position: relative; z-index: 1; }
-
-/* Header / Navbar */
-header{
-  position:sticky; top:0; z-index: 10;
-  display:flex; align-items:center; justify-content:space-between;
-  gap:16px; padding:14px 22px;
-  background: rgba(12,16,22,.75);
-  border-bottom:1px solid var(--border);
-  box-shadow: 0 2px 12px rgba(0,0,0,.25);
-  backdrop-filter: blur(6px);
-}
-.logo{ font-weight:800; letter-spacing:.3px; color:var(--primary); }
-nav a{
-  display:inline-block; padding:8px 14px; margin-left:4px;
-  color:var(--muted); text-decoration:none; border-radius:12px;
-  transition: transform .15s ease, background .15s ease, color .15s ease;
-}
-nav a:hover{ color:var(--text); background:var(--surface); transform: translateY(-1px); }
-nav a.active{ color:#00181c; background:var(--primary); }
-
-/* Containers */
-.page, .container{
-  max-width:1100px; margin:32px auto; padding:28px;
-  background:linear-gradient( to bottom right, rgba(255,255,255,.06), rgba(255,255,255,.03) );
-  border:1px solid var(--border);
-  border-radius:18px;
-  box-shadow: var(--shadow);
-}
-
-/* Hero */
-.hero{ display:flex; gap:28px; align-items:center; justify-content:space-between; }
-.hero-text h1{ font-size: clamp(26px, 3.2vw, 42px); margin-bottom:10px; color:var(--text); }
-.hero-text p{ color:var(--muted); margin-bottom:18px; max-width: 680px; }
-.hero-image img{ width: min(100%, 460px); display:block; filter: drop-shadow(0 16px 30px rgba(0,0,0,.35)); }
-
-/* Botões */
-a.btn-whatsapp, .btn, button, .btn-primary{
-  display:inline-block; border:none;
-  background: var(--primary);
-  color:#00181c; font-weight:700; text-decoration:none;
-  padding:12px 18px; border-radius:14px;
-  box-shadow: 0 8px 16px rgba(0,229,255,.18);
-  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
-}
-a.btn-whatsapp:hover, .btn:hover, button:hover, .btn-primary:hover{
-  background: var(--primary-strong);
-  transform: translateY(-1px);
-  box-shadow: 0 12px 22px rgba(0,229,255,.25);
-}
-
-/* Cards / Blocos */
-.card, .plan-card, .depoimento{
-  background: var(--surface);
-  border:1px solid var(--border);
-  border-radius:18px; padding:20px;
-  box-shadow: var(--shadow);
-}
-.card h2, .plan-card h2{ margin-top:0 }
-.depoimentos-container{ display:grid; gap:16px; }
-
-/* Planos */
-.plans{ display:grid; gap:18px; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); }
-.plan-list{ margin:12px 0 0 18px; color:var(--muted); }
-.price{ font-size:22px; margin-top:14px; color:var(--text) }
-.highlight{ outline:2px solid var(--primary); }
-
-/* Depoimentos */
-.depoimento p{ color:var(--muted); }
-.depoimento cite{ display:block; margin-top:10px; color:var(--primary); font-style: normal; }
-
-/* Formulários */
-input, textarea{
-  width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--border);
-  background: var(--surface-2); color:var(--text);
-}
-label{ color: var(--muted); }
-form button{ margin-top:12px; }
-
-/* Footer */
-footer{
-  margin-top:28px; padding:16px; text-align:center;
-  color:var(--muted);
-  background: rgba(10,14,18,.7);
-  border-top:1px solid var(--border);
-}
-/* Utilitários */
-.center{text-align:center}
-.mt-2{margin-top:8px}.mt-3{margin-top:12px}.mt-4{margin-top:16px}
-/* ======================================================================= */</style>
+  form {max-width:600px;margin:auto;}
+  input, textarea {width:100%;padding:10px;margin:10px 0;border-radius:8px;border:none;}
+  </style>
 </head>
 <body>
-  <!-- Cabeçalho -->
   <header>
-    <a href="/"><img src="/img/favicon.png" alt="Logo NEXA DEV"></a>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/sobre/">Sobre</a></li>
-        <li><a href="/planos/">Planos</a></li>
-        <li><a href="/depoimentos/">Depoimentos</a></li>
-        <li><a href="/contato/">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Conteúdo -->
-  <section class="container">
     <h1>Fale Conosco</h1>
-    <p style="text-align:center; margin-bottom:20px;">
-      Preencha o formulário abaixo e entraremos em contato o mais rápido possível.
-    </p>
-
-    <form action="https://formsubmit.co/seuemail@dominio.com" method="POST">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-      <button type="submit">Enviar</button>
+  </header>
+  <main class="container">
+    <p>Entre em contato conosco e descubra como podemos ajudar sua empresa a crescer com tecnologia.</p>
+    <a href="https://wa.me/5598981502071?text=Olá, quero mais informações sobre os serviços da Nexa Dev" class="btn">Chamar no WhatsApp</a>
+    <form>
+      <input type="text" placeholder="Seu Nome" required>
+      <input type="email" placeholder="Seu E-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem"></textarea>
+      <button type="submit" class="btn">Enviar</button>
     </form>
-  </section>
-
-  <!-- Rodapé -->
+  </main>
   <footer>
-    <p>&copy; 2025 NEXA DEV - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Nexa Dev. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
