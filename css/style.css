@@ -28,7 +28,11 @@ body{
 }
 
 /* Layout */
-.container{max-width:1160px;margin:0 auto;padding:28px 20px}
+.container{
+  max-width:1320px;   /* mais largura */
+  margin:0 auto;
+  padding:40px 24px;  /* mais espaçamento */
+}
 .section{margin:28px 0;padding:22px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow)}
 .grid{display:grid;gap:18px}
 .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -59,10 +63,30 @@ nav a.active{color:#05251d;background:var(--primary);font-weight:700}
 }
 
 /* Hero */
-.hero{display:grid;grid-template-columns:1.2fr .9fr;align-items:center;gap:28px}
-.hero h1{font-size:clamp(28px,4.2vw,56px);line-height:1.1;margin-bottom:14px}
-.hero p{color:var(--muted);max-width:620px;margin-bottom:18px}
-.hero img{width:min(100%,420px);border-radius:28px;box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.hero{
+  display:grid;
+  grid-template-columns: 1fr 1fr;  /* divide meio a meio */
+  align-items:center;
+  gap:40px;                        /* mais espaçamento */
+  justify-content:center;          /* centraliza */
+}
+.hero h1{
+  font-size:clamp(36px,5vw,68px);  /* título maior */
+  line-height:1.15;
+  margin-bottom:20px;
+}
+.hero p{
+  color:var(--muted);
+  max-width:720px;                 /* texto mais largo */
+  margin-bottom:18px;
+  font-size:1.2rem;
+}
+.hero img{
+  width:100%;
+  max-width:480px;                 /* imagem maior */
+  border-radius:28px;
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
 .badges{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
 .tag{padding:6px 10px;border-radius:999px;background:var(--card);border:1px solid var(--border);font-size:.9rem;color:#d7efe7}
 
