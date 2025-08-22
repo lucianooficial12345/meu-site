@@ -1,4 +1,3 @@
-
 :root{
   --bg:#07271e;
   --overlay:rgba(6,22,18,.78);
@@ -104,6 +103,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
 .spaced{margin-top:16px}
 .small{font-size:.92rem;color:var(--muted)}
 hr{border:0;border-top:1px solid var(--border);margin:16px 0}
+
 /* Grid de 4 colunas (para a seção Como Funciona) */
 .grid-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -121,21 +121,27 @@ hr{border:0;border-top:1px solid var(--border);margin:16px 0}
   .grid-4 {
     grid-template-columns: 1fr;
   }
-}/* Correção de rolagem lateral */
-html, body {
-  overflow-x: hidden; /* trava rolagem lateral */
 }
 
-.btn-accent {
-  max-width: calc(100% - 40px); /* evita estourar no desktop */
-  white-space: nowrap; /* mantém texto em uma linha */
-}
+/* Botão flutuante do WhatsApp */
 .whatsapp-btn {
   position: fixed;
-  right: 18px;
-  bottom: 18px;
-  z-index: 40;
-  max-width: calc(100% - 40px); /* não deixa ultrapassar a largura */
-  overflow-x: hidden;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;          /* sempre por cima */
+  display: inline-block;
+  padding: 14px 20px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: #05251d;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0,0,0,.3);
+  transition: .2s;
+  white-space: nowrap;
 }
 
+.whatsapp-btn:hover {
+  background: var(--primary-strong);
+  transform: translateY(-2px);
+}
