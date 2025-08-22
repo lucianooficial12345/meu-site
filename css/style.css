@@ -121,4 +121,13 @@ hr{border:0;border-top:1px solid var(--border);margin:16px 0}
   .grid-4 {
     grid-template-columns: 1fr;
   }
+}/* Correção de rolagem lateral */
+html, body {
+  overflow-x: hidden; /* trava rolagem lateral */
 }
+
+.btn-accent {
+  max-width: calc(100% - 40px); /* evita estourar no desktop */
+  white-space: nowrap; /* mantém texto em uma linha */
+}
+
