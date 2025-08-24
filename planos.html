@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planos – Nexa Dev</title>
-  <meta name="description" content="Planos de sites e chatbots.">
+  <meta name="description" content="Planos - Nexa Dev: escolha o plano ideal para seu negócio com sites modernos e chatbots inteligentes.">
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 <header>
@@ -15,96 +16,113 @@
     <button class="burger" aria-label="menu">☰</button>
     <nav>
       <div class="nav-links">
-        <a href="index.html" class="">Home</a>
-        <a href="sobre.html" class="">Sobre</a>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
         <a href="planos.html" class="active">Planos</a>
-        <a href="como-funciona.html" class="">Como Funciona</a>
-        <a href="depoimentos.html" class="">Depoimentos</a>
-        <a href="contato.html" class="">Contato</a>
+        <a href="como-funciona.html">Como Funciona</a>
+        <a href="depoimentos.html">Depoimentos</a>
+        <a href="contato.html">Contato</a>
       </div>
     </nav>
   </div>
 </header>
 
 <main>
-<section class="container section reveal center">
-  <h1>Planos</h1>
-  <p class="muted spaced">Escolha a solução que mais combina com sua fase de negócio. Todos os planos incluem suporte e melhorias contínuas.</p>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Planos que cabem no seu bolso</h1>
+      <p>Escolha o plano ideal para escalar seu negócio com tecnologia, design e atendimento automatizado.</p>
+    </div>
+    <div class="hero-img">
+      <img src="img/planos.png" alt="Planos Nexa Dev">
+    </div>
+  </div>
 </section>
 
 <section class="container section">
-  <h2 class="kicker">Planos de Chatbot</h2>
+  <h2 class="center">Nossos Planos</h2>
   <div class="grid grid-3 spaced">
-    <div class="card reveal">
-      
-      <h3>Chatbot Start</h3>
-      <div class="price">R$ 399</div>
-      <div class="features small"><div class='feature'>✅ Fluxo básico de atendimento</div><div class='feature'>✅ Perguntas frequentes</div><div class='feature'>✅ Integração WhatsApp</div></div>
-      <div class="spaced"><a class="btn btn-primary" href="https://wa.me/5598981502071" target="_blank">Quero este</a></div>
-    </div><div class="card reveal">
-      <div class='tag' style='margin-bottom:10px'>Mais vendido</div>
-      <h3>Chatbot Pro</h3>
-      <div class="price">R$ 799</div>
-      <div class="features small"><div class='feature'>✅ Qualificação de leads</div><div class='feature'>✅ Captura de dados</div><div class='feature'>✅ Respostas personalizadas</div></div>
-      <div class="spaced"><a class="btn btn-primary" href="https://wa.me/5598981502071" target="_blank">Quero este</a></div>
-    </div><div class="card reveal">
-      
-      <h3>Chatbot Premium</h3>
-      <div class="price">R$ 1499</div>
-      <div class="features small"><div class='feature'>✅ Integrações avançadas</div><div class='feature'>✅ Relatórios mensais</div><div class='feature'>✅ Treinamento da equipe</div></div>
-      <div class="spaced"><a class="btn btn-primary" href="https://wa.me/5598981502071" target="_blank">Quero este</a></div>
+    
+    <!-- Plano Básico -->
+    <div class="card hover">
+      <div class="icon"><i data-lucide="star"></i></div>
+      <h3>Básico</h3>
+      <p class="muted">Ideal para quem está começando</p>
+      <ul class="features">
+        <li>✅ Site responsivo</li>
+        <li>✅ 3 páginas incluídas</li>
+        <li>✅ Chatbot básico</li>
+        <li>✅ Suporte por email</li>
+      </ul>
+      <div class="spaced">
+        <div class="price">R$ 499</div>
+        <a href="https://wa.me/5598981502071" target="_blank" class="btn btn-primary">Contratar</a>
+      </div>
     </div>
-  </div>
-</section>
 
-<section class="container section">
-  <h2 class="kicker">Planos de Site</h2>
-  <div class="grid grid-3 spaced">
-    <div class="card reveal">
-      
-      <h3>Site Start</h3>
-      <div class="price">R$ 599</div>
-      <div class="features small"><div class='feature'>✅ Landing page de alta conversão</div><div class='feature'>✅ Layout responsivo</div><div class='feature'>✅ SEO on-page básico</div></div>
-      <div class="spaced"><a class="btn btn-primary" href="https://wa.me/5598981502071" target="_blank">Quero este</a></div>
-    </div><div class="card reveal">
-      <div class='tag' style='margin-bottom:10px'>Mais vendido</div>
-      <h3>Site Pro</h3>
-      <div class="price">R$ 1299</div>
-      <div class="features small"><div class='feature'>✅ Site multi-páginas</div><div class='feature'>✅ Blog/Seção de conteúdo</div><div class='feature'>✅ Otimização de velocidade</div></div>
-      <div class="spaced"><a class="btn btn-primary" href="https://wa.me/5598981502071" target="_blank">Quero este</a></div>
-    </div><div class="card reveal">
-      
-      <h3>Site Premium</h3>
-      <div class="price">R$ 2499</div>
-      <div class="features small"><div class='feature'>✅ Design exclusivo</div><div class='feature'>✅ Páginas ilimitadas</div><div class='feature'>✅ Suporte prioritário</div></div>
-      <div class="spaced"><a class="btn btn-primary" href="https://wa.me/5598981502071" target="_blank">Quero este</a></div>
+    <!-- Plano Pro -->
+    <div class="card hover" style="border: 2px solid var(--secondary);">
+      <div class="icon"><i data-lucide="zap"></i></div>
+      <h3>Profissional</h3>
+      <p class="muted">Mais recursos para negócios em crescimento</p>
+      <ul class="features">
+        <li>✅ Site otimizado (SEO)</li>
+        <li>✅ Até 6 páginas</li>
+        <li>✅ Chatbot avançado</li>
+        <li>✅ Suporte WhatsApp</li>
+      </ul>
+      <div class="spaced">
+        <div class="price">R$ 999</div>
+        <a href="https://wa.me/5598981502071" target="_blank" class="btn btn-accent">Contratar</a>
+      </div>
     </div>
-  </div>
-</section>
 
-<section class="container section">
-  <h2 class="kicker">Combos: Site + Chatbot</h2>
-  <div class="grid grid-2 spaced">
-    <div class="card reveal">
-      
-      <h3>Combo Start (Site + Bot)</h3>
-      <div class="price">R$ 1299</div>
-      <div class="features small"><div class='feature'>✅ Landing + Chatbot básico</div><div class='feature'>✅ Entrega rápida</div><div class='feature'>✅ Suporte 30 dias</div></div>
-      <div class="spaced"><a class="btn btn-primary" href="https://wa.me/5598981502071" target="_blank">Quero este</a></div>
-    </div><div class="card reveal">
-      <div class='tag' style='margin-bottom:10px'>Mais vendido</div>
-      <h3>Combo Pro (Site + Bot)</h3>
-      <div class="price">R$ 2299</div>
-      <div class="features small"><div class='feature'>✅ Site profissional + Bot Pro</div><div class='feature'>✅ SEO técnico</div><div class='feature'>✅ Relatórios de conversão</div></div>
-      <div class="spaced"><a class="btn btn-primary" href="https://wa.me/5598981502071" target="_blank">Quero este</a></div>
+    <!-- Plano Premium -->
+    <div class="card hover">
+      <div class="icon"><i data-lucide="crown"></i></div>
+      <h3>Premium</h3>
+      <p class="muted">Performance máxima e suporte total</p>
+      <ul class="features">
+        <li>✅ Site completo + blog</li>
+        <li>✅ Páginas ilimitadas</li>
+        <li>✅ Chatbot inteligente 24/7</li>
+        <li>✅ Suporte dedicado</li>
+      </ul>
+      <div class="spaced">
+        <div class="price">R$ 1999</div>
+        <a href="https://wa.me/5598981502071" target="_blank" class="btn btn-primary">Contratar</a>
+      </div>
     </div>
+
   </div>
-  <div class="center spaced"><a class="btn btn-accent" href="https://wa.me/5598981502071" target="_blank">Tire dúvidas no WhatsApp</a></div>
 </section>
 </main>
 
 <footer>
-  <div class="container">
+  <div class="container footer-grid">
+    <div>
+      <h4>Nexa Dev</h4>
+      <p>Sites rápidos e chatbots inteligentes para escalar seu negócio.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="planos.html">Planos</a></li>
+        <li><a href="como-funciona.html">Como Funciona</a></li>
+        <li><a href="depoimentos.html">Depoimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>📞 (98) 98150-2071</p>
+      <p>✉️ contato@nexadev.com</p>
+    </div>
+  </div>
+  <div class="container center">
     <div>© 2025 Nexa Dev — Todos os direitos reservados</div>
     <div class="small">Sites rápidos • Chatbots inteligentes • Suporte humano</div>
   </div>
@@ -112,5 +130,8 @@
 
 <a class="btn btn-accent whatsapp-btn" href="https://wa.me/5598981502071" target="_blank">WhatsApp</a>
 <script src="js/script.js"></script>
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>

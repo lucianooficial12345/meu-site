@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Como Funciona – Nexa Dev</title>
-  <meta name="description" content="Etapas de trabalho: diagnóstico, design, desenvolvimento e go-live.">
+  <meta name="description" content="Entenda como funciona a criação de sites e chatbots da Nexa Dev. Processo ágil, transparente e com foco em resultados.">
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 <header>
@@ -15,55 +16,88 @@
     <button class="burger" aria-label="menu">☰</button>
     <nav>
       <div class="nav-links">
-        <a href="index.html" class="">Home</a>
-        <a href="sobre.html" class="">Sobre</a>
-        <a href="planos.html" class="">Planos</a>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="planos.html">Planos</a>
         <a href="como-funciona.html" class="active">Como Funciona</a>
-        <a href="depoimentos.html" class="">Depoimentos</a>
-        <a href="contato.html" class="">Contato</a>
+        <a href="depoimentos.html">Depoimentos</a>
+        <a href="contato.html">Contato</a>
       </div>
     </nav>
   </div>
 </header>
 
 <main>
-<section class="container section center reveal">
-  <h1>Como Funciona</h1>
-  <p class="muted spaced">Processo simples e objetivo para lançar seu projeto com rapidez e qualidade.</p>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Como Funciona</h1>
+      <p>Nosso processo é <span class="highlight">rápido, transparente e eficaz</span>. A cada etapa, você acompanha de perto a construção do seu site ou chatbot até a entrega final.</p>
+    </div>
+    <div class="hero-img">
+      <img src="img/process.png" alt="Processo Nexa Dev">
+    </div>
+  </div>
 </section>
 
-<section class="container section reveal">
-  <!-- Corrigido: removido o style inline -->
-  <div class="grid grid-4 grid-2">
-    <div class="card">
-      <div class="kicker">1. Diagnóstico</div>
-      <h3>Entendimento</h3>
-      <p class="muted">Reunião rápida para mapear metas e oportunidades.</p>
+<section class="container section steps">
+  <h2 class="center">Etapas do Processo</h2>
+  <div class="grid grid-4 spaced">
+    <div class="card hover center">
+      <div class="icon large"><i data-lucide="message-circle"></i></div>
+      <h3>1. Briefing</h3>
+      <p class="muted">Entendemos sua necessidade, público-alvo e objetivos de negócio.</p>
     </div>
-    <div class="card">
-      <div class="kicker">2. Protótipo</div>
-      <h3>Design</h3>
-      <p class="muted">Protótipo navegável para validar antes do desenvolvimento.</p>
+    <div class="card hover center">
+      <div class="icon large"><i data-lucide="palette"></i></div>
+      <h3>2. Design</h3>
+      <p class="muted">Criamos um layout moderno, responsivo e alinhado à sua marca.</p>
     </div>
-    <div class="card">
-      <div class="kicker">3. Construção</div>
-      <h3>Desenvolvimento</h3>
-      <p class="muted">Implementação com performance, SEO e automações.</p>
+    <div class="card hover center">
+      <div class="icon large"><i data-lucide="code"></i></div>
+      <h3>3. Desenvolvimento</h3>
+      <p class="muted">Transformamos o design em um site rápido e otimizado com SEO técnico.</p>
     </div>
-    <div class="card">
-      <div class="kicker">4. Go-live</div>
-      <h3>Lançamento</h3>
-      <p class="muted">Publicação + monitoramento inicial com ajustes finos.</p>
+    <div class="card hover center">
+      <div class="icon large"><i data-lucide="rocket"></i></div>
+      <h3>4. Lançamento</h3>
+      <p class="muted">Seu projeto vai ao ar com suporte humano para ajustes e melhorias.</p>
     </div>
   </div>
-  <div class="center spaced">
-    <a class="btn btn-primary" href="{whatsapp}" target="_blank">Começar agora</a>
-  </div>
+</section>
+
+<section class="container section cta center">
+  <h2>Pronto para começar?</h2>
+  <p class="muted">Transforme seu negócio com um site de alta conversão e chatbots inteligentes.</p>
+  <a class="btn btn-primary" href="planos.html">Ver Planos</a>
+  <a class="btn btn-outline" href="contato.html">Falar com a gente</a>
 </section>
 </main>
 
 <footer>
-  <div class="container">
+  <div class="container footer-grid">
+    <div>
+      <h4>Nexa Dev</h4>
+      <p>Sites rápidos e chatbots inteligentes para escalar seu negócio.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="planos.html">Planos</a></li>
+        <li><a href="como-funciona.html">Como Funciona</a></li>
+        <li><a href="depoimentos.html">Depoimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>📞 (98) 98150-2071</p>
+      <p>✉️ contato@nexadev.com</p>
+    </div>
+  </div>
+  <div class="container center">
     <div>© 2025 Nexa Dev — Todos os direitos reservados</div>
     <div class="small">Sites rápidos • Chatbots inteligentes • Suporte humano</div>
   </div>
@@ -71,6 +105,8 @@
 
 <a class="btn btn-accent whatsapp-btn" href="https://wa.me/5598981502071" target="_blank">WhatsApp</a>
 <script src="js/script.js"></script>
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>
-

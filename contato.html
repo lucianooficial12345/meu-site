@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato – Nexa Dev</title>
-  <meta name="description" content="Contato Nexa Dev via WhatsApp.">
+  <title>Planos – Nexa Dev</title>
+  <meta name="description" content="Planos - Nexa Dev: escolha o plano ideal para seu negócio com sites modernos e chatbots inteligentes.">
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 <header>
@@ -15,31 +16,113 @@
     <button class="burger" aria-label="menu">☰</button>
     <nav>
       <div class="nav-links">
-        <a href="index.html" class="">Home</a>
-        <a href="sobre.html" class="">Sobre</a>
-        <a href="planos.html" class="">Planos</a>
-        <a href="como-funciona.html" class="">Como Funciona</a>
-        <a href="depoimentos.html" class="">Depoimentos</a>
-        <a href="contato.html" class="active">Contato</a>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="planos.html" class="active">Planos</a>
+        <a href="como-funciona.html">Como Funciona</a>
+        <a href="depoimentos.html">Depoimentos</a>
+        <a href="contato.html">Contato</a>
       </div>
     </nav>
   </div>
 </header>
 
 <main>
-<section class="container section center reveal">
-  <h1>Contato</h1>
-  <p class="muted spaced">Fale com a gente pelo WhatsApp. Resposta rápida e humanizada.</p>
-  <div class="spaced">
-    <a class="btn btn-accent" href="https://wa.me/5598981502071" target="_blank">Conversar no WhatsApp</a>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Planos que cabem no seu bolso</h1>
+      <p>Escolha o plano ideal para escalar seu negócio com tecnologia, design e atendimento automatizado.</p>
+    </div>
+    <div class="hero-img">
+      <img src="img/planos.png" alt="Planos Nexa Dev">
+    </div>
   </div>
-  <hr/>
-  <p class="small">Se preferir, envie um e-mail: <b>contato@nexadev.example</b></p>
+</section>
+
+<section class="container section">
+  <h2 class="center">Nossos Planos</h2>
+  <div class="grid grid-3 spaced">
+    
+    <!-- Plano Básico -->
+    <div class="card hover">
+      <div class="icon"><i data-lucide="star"></i></div>
+      <h3>Básico</h3>
+      <p class="muted">Ideal para quem está começando</p>
+      <ul class="features">
+        <li>✅ Site responsivo</li>
+        <li>✅ 3 páginas incluídas</li>
+        <li>✅ Chatbot básico</li>
+        <li>✅ Suporte por email</li>
+      </ul>
+      <div class="spaced">
+        <div class="price">R$ 499</div>
+        <a href="https://wa.me/5598981502071" target="_blank" class="btn btn-primary">Contratar</a>
+      </div>
+    </div>
+
+    <!-- Plano Pro -->
+    <div class="card hover" style="border: 2px solid var(--secondary);">
+      <div class="icon"><i data-lucide="zap"></i></div>
+      <h3>Profissional</h3>
+      <p class="muted">Mais recursos para negócios em crescimento</p>
+      <ul class="features">
+        <li>✅ Site otimizado (SEO)</li>
+        <li>✅ Até 6 páginas</li>
+        <li>✅ Chatbot avançado</li>
+        <li>✅ Suporte WhatsApp</li>
+      </ul>
+      <div class="spaced">
+        <div class="price">R$ 999</div>
+        <a href="https://wa.me/5598981502071" target="_blank" class="btn btn-accent">Contratar</a>
+      </div>
+    </div>
+
+    <!-- Plano Premium -->
+    <div class="card hover">
+      <div class="icon"><i data-lucide="crown"></i></div>
+      <h3>Premium</h3>
+      <p class="muted">Performance máxima e suporte total</p>
+      <ul class="features">
+        <li>✅ Site completo + blog</li>
+        <li>✅ Páginas ilimitadas</li>
+        <li>✅ Chatbot inteligente 24/7</li>
+        <li>✅ Suporte dedicado</li>
+      </ul>
+      <div class="spaced">
+        <div class="price">R$ 1999</div>
+        <a href="https://wa.me/5598981502071" target="_blank" class="btn btn-primary">Contratar</a>
+      </div>
+    </div>
+
+  </div>
 </section>
 </main>
 
 <footer>
-  <div class="container">
+  <div class="container footer-grid">
+    <div>
+      <h4>Nexa Dev</h4>
+      <p>Sites rápidos e chatbots inteligentes para escalar seu negócio.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="planos.html">Planos</a></li>
+        <li><a href="como-funciona.html">Como Funciona</a></li>
+        <li><a href="depoimentos.html">Depoimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>📞 (98) 98150-2071</p>
+      <p>✉️ contato@nexadev.com</p>
+    </div>
+  </div>
+  <div class="container center">
     <div>© 2025 Nexa Dev — Todos os direitos reservados</div>
     <div class="small">Sites rápidos • Chatbots inteligentes • Suporte humano</div>
   </div>
@@ -47,5 +130,8 @@
 
 <a class="btn btn-accent whatsapp-btn" href="https://wa.me/5598981502071" target="_blank">WhatsApp</a>
 <script src="js/script.js"></script>
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>
