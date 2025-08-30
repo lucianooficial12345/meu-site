@@ -18,14 +18,6 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
-  other: {
-    "X-Frame-Options": "DENY",
-    "X-Content-Type-Options": "nosniff",
-    "X-XSS-Protection": "1; mode=block",
-    "Referrer-Policy": "strict-origin-when-cross-origin",
-    "Content-Security-Policy":
-      "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;",
-  },
 }
 
 export default function RootLayout({
@@ -35,22 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="dark">
-      <head>
-        <meta httpEquiv="X-Frame-Options" content="DENY" />
-        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-        <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
-        <meta name="referrer" content="strict-origin-when-cross-origin" />
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;"
-        />
-      </head>
-      <body
-        className={`font-sans ${GeistSans.variable} ${GeistMono.variable} gradient-bg min-h-screen protected-content`}
-      >
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} gradient-bg min-h-screen`}>
+        <Suspense fallback={null}>{children}</Suspense>
         <SecurityProtection />
         <AntiCopyProtection />
-        <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>
     </html>
