@@ -1,0 +1,250 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens for dark theme with green and blue accents */
+  --background: oklch(0.145 0.02 240); /* Dark blue-gray background */
+  --foreground: oklch(0.985 0 0); /* White text */
+  --card: oklch(0.18 0.02 240 / 0.8); /* Semi-transparent dark cards */
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.18 0.02 240 / 0.9);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.55 0.15 145); /* Green primary */
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.65 0.18 220); /* Blue secondary */
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.25 0.02 240);
+  --muted-foreground: oklch(0.708 0.05 145);
+  --accent: oklch(0.7 0.2 145); /* Bright green accent */
+  --accent-foreground: oklch(0.145 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.3 0.02 240 / 0.3); /* Subtle transparent borders */
+  --input: oklch(0.25 0.02 240 / 0.8);
+  --ring: oklch(0.65 0.18 220); /* Blue focus ring */
+  --chart-1: oklch(0.55 0.15 145);
+  --chart-2: oklch(0.65 0.18 220);
+  --chart-3: oklch(0.7 0.2 145);
+  --chart-4: oklch(0.6 0.16 180);
+  --chart-5: oklch(0.75 0.22 160);
+  --radius: 0.75rem; /* Slightly more rounded */
+  --sidebar: oklch(0.18 0.02 240 / 0.95);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.55 0.15 145);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.7 0.2 145);
+  --sidebar-accent-foreground: oklch(0.145 0 0);
+  --sidebar-border: oklch(0.3 0.02 240 / 0.3);
+  --sidebar-ring: oklch(0.65 0.18 220);
+}
+
+.dark {
+  /* Dark mode uses the same tokens since we're designing for dark theme */
+  --background: oklch(0.145 0.02 240);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.18 0.02 240 / 0.8);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.18 0.02 240 / 0.9);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.55 0.15 145);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.65 0.18 220);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.25 0.02 240);
+  --muted-foreground: oklch(0.708 0.05 145);
+  --accent: oklch(0.7 0.2 145);
+  --accent-foreground: oklch(0.145 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.3 0.02 240 / 0.3);
+  --input: oklch(0.25 0.02 240 / 0.8);
+  --ring: oklch(0.65 0.18 220);
+  --chart-1: oklch(0.55 0.15 145);
+  --chart-2: oklch(0.65 0.18 220);
+  --chart-3: oklch(0.7 0.2 145);
+  --chart-4: oklch(0.6 0.16 180);
+  --chart-5: oklch(0.75 0.22 160);
+  --sidebar: oklch(0.18 0.02 240 / 0.95);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.55 0.15 145);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.7 0.2 145);
+  --sidebar-accent-foreground: oklch(0.145 0 0);
+  --sidebar-border: oklch(0.3 0.02 240 / 0.3);
+  --sidebar-ring: oklch(0.65 0.18 220);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Adicionando proteções CSS contra cópia e inspeção */
+  * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Permitir seleção apenas em inputs e textareas */
+  input,
+  textarea,
+  [contenteditable="true"] {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+
+  /* Proteção contra print screen e screenshots */
+  @media print {
+    * {
+      display: none !important;
+    }
+    body::before {
+      content: "© Nexa Dev - Conteúdo protegido contra impressão";
+      display: block !important;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 50vh;
+    }
+  }
+
+  /* Proteção contra drag and drop */
+  img,
+  video,
+  audio {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+  }
+
+  /* Ocultar scrollbars para dificultar inspeção */
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* Proteção contra seleção de texto com CSS */
+  ::selection {
+    background: transparent;
+  }
+  ::-moz-selection {
+    background: transparent;
+  }
+
+  /* Watermark invisível de proteção */
+  body::after {
+    content: "© Nexa Dev - Todos os direitos reservados";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.001;
+    font-size: 1px;
+    color: transparent;
+    user-select: none;
+  }
+
+  /* Proteção contra ferramentas de desenvolvedor */
+  .dev-tools-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    z-index: 999999;
+    text-align: center;
+  }
+
+  /* Added custom gradient backgrounds for enhanced visual appeal */
+  .gradient-bg {
+    background: linear-gradient(135deg, oklch(0.145 0.02 240) 0%, oklch(0.18 0.03 220) 50%, oklch(0.16 0.02 260) 100%);
+  }
+
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: oklch(0.18 0.02 240 / 0.1);
+    border: 1px solid oklch(0.3 0.02 240 / 0.2);
+  }
+
+  /* Proteção adicional contra inspeção */
+  .protected-content {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: auto;
+  }
+
+  /* Ocultar elementos sensíveis quando DevTools está aberto */
+  @media (max-height: 500px) and (orientation: landscape) {
+    .sensitive-content {
+      display: none !important;
+    }
+  }
+}
